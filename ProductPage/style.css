@@ -1,0 +1,147 @@
+body{
+ background-image: url(https://i2.wp.com/www.123freevectors.com/wp-content/original/141520-abstract-blue-and-white-square-pixel-mosaic-background-vector-illustration.jpg?w=800&q=95);
+}
+header{
+  position:fixed;
+}
+#header-img {
+ display:flex;
+  width:170px;
+ height:74px;
+  margin-left:0px;
+  margin-top:-30px;
+  }
+ 
+nav {
+  display:flex;
+    overflow:hidden;
+    background-color: hsl(0, 6%, 97%);
+   }
+#nav-bar{
+  text-align:left;
+  font-size: 28px;
+  position: fixed;
+  left:2px;
+  right:0px;
+  padding-top:0px;
+  padding-bottom:25px;
+  width: 100%;
+  height:50px;}
+
+nav > ul {
+ list-style-type: none;
+ width: 100vw;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+  nav > ul {
+    flex-direction:column;
+  }
+}
+
+nav a { text-decoration: none;
+      color:#4d4dff;}
+
+h1{
+  text-align:center;
+  font-family:sans-serif;
+  color:#00004d;
+  }
+
+h4{
+  text-align:center;
+}
+p {
+  text-align:center;
+}
+#information{
+text-align:center;
+}
+ 
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border-radius: 3px;
+  border: 2px solid gray;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+
+.product > button {
+  border: 500px;
+  margin: 20px 0px;
+  background-color:#00ace6;
+  cursor: pointer;}
+
+  
+ 
+
+
+.product > button:hover {
+  background-color:#b3ecff;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+.product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+form input { 
+  max-width:275px;
+  width:100%;
+  padding:5px;
+box-shadow: 0px 0px 10px #6AB5FF;
+  }
+
+form input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 5px;
+  background-color:#00ace6;
+ }
+
+form input[type="submit"]:hover {
+  background-color:#b3ecff;
+  transition: background-color 2s;
+}
+
+@media (max-width: 650px) {
+  form {
+    margin-top: 20px;
+  }
